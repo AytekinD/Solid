@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OCP.Ornek2
+namespace DIP_DependencyInversionPrinciple_.Loglama.Abstract
 {
-    internal class Daire
+    public interface ILogger
     {
-        public int YariCap { get; set; }
+        void Logla(string message);
     }
 }

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LP_LiskovPrinciple_.Bad
+namespace OCP.Ornek2.duzeltilmis
 {
-    internal class BadRectangle
+    internal interface ISekil
     {
-        public int UzunKenar { get; set; }
+        double AlaHesapla();
     }
 }

@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OCP.Ornek2
+namespace ISP.KusOrnegi
 {
-    internal class Daire
+    public interface IKus
     {
-        public int YariCap { get; set; }
+        void Uc();
+        void Kos();
+        void Yuz();
+        void Yuru();
     }
 }

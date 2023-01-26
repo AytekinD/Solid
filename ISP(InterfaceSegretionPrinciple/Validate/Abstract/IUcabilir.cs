@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OCP.Ornek2
+namespace ISP.Validate.Abstract
 {
-    internal class Daire
+    public interface IUcabilir
     {
-        public int YariCap { get; set; }
+        void Uc();
     }
 }

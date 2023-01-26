@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OCP.Ornek2
+namespace LSP.Validate
 {
-    internal class Daire
+    internal abstract class Sekil
     {
-        public int YariCap { get; set; }
+        public abstract double AlanHesapla();
     }
 }

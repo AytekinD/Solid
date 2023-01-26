@@ -4,10 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OCP.Ornek2
+namespace OCP.Ornek2.duzeltilmis
 {
-    internal class Daire
+    internal class YeniDaire : ISekil
     {
         public int YariCap { get; set; }
+        public double AlaHesapla()
+        {
+            return YariCap * YariCap * Math.PI;
+        }
     }
 }

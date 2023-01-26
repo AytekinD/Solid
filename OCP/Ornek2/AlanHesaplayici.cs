@@ -8,14 +8,27 @@ namespace OCP.Ornek2
 {
     internal class AlanHesaplayici
     {
-        public double AlanHesapla(Dikdortgen[] dikdortgens)
+
+        public double AlanHesapla(object[] dikdortgens) 
         {
+
             double alan = 0;
             foreach (var item in dikdortgens)
             {
-                alan = item.KisaKenar * item.UzunKenar;
+                if(item is Dikdortgen) 
+                { 
+                
+                 Dikdortgen dikdortgen = (Dikdortgen)item;
+                    alan = dikdortgen.KisaKenar * dikdortgen.UzunKenar;
+                }
+                else if (item is Daire)
+                {
+                    Daire d = (Daire)item;
+                    alan = d.YariCap * Math.PI * d.YariCap;
+
+                }
             }
-            return alan;
+            return alan;    
         }
     }
 }
